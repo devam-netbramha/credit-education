@@ -1,0 +1,76 @@
+.payment-card {
+    position: relative;
+    margin: 30px 30px;
+    background: #FFFFFF;
+    border: 1px solid #DDE0EF;
+    border-radius: 6px;
+    border-left: 4px solid #A9D161;
+    ;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    .payment-content {
+
+        .payment-header {
+            padding: 20px 20px 0px;
+            justify-content: flex-end;
+            position: absolute;
+            right: 0;
+            top: 0px;
+            z-index: 1;
+        }
+
+        .payment-body {
+            padding: 50px 20px 35px;
+            margin-top: 30px;
+            display: flex;
+            gap: 32px;
+
+            @media screen and (max-width: 767px) {
+                // display: block;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .tick-mark {
+                img {
+                    width: 91px;
+                    height: 91px;
+                }
+            }
+
+            .payment-content {
+                .heading {
+                    font-family: $intro-book;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 32px;
+                    color: #2C2C2C;
+                }
+
+                .para {
+
+                    font-family: $intro-book;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #707070;
+
+                    .text {
+                        font-weight: 400;
+                        color: #2C2C2C;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.empty-div {
+    height: 400px;
+    width: 100%;
+}

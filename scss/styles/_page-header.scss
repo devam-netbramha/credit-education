@@ -1,0 +1,230 @@
+//Page header
+.page-header-section {
+  background-color: $light-blue;
+  border-bottom: 1px solid $border-color;
+
+  &__wraper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .breadcrumb {
+      background-color: transparent;
+      padding: 0px;
+      margin-bottom: 0px;
+      flex-wrap: nowrap;
+      overflow: hidden;
+
+      &>li:first-child,
+      &>li:nth-child(2)::before {
+        display: none;
+      }
+
+      .breadcrumb-item {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: end;
+
+        a {
+          text-transform: capitalize;
+          border-radius: 4px;
+          background-color: $light;
+          min-height: 30px;
+          display: block;
+          align-items: center;
+          justify-content: center;
+          padding: 4px 14px;
+          color: $grey;
+          font-size: 14px;
+          line-height: 24px;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 4px;
+          height: 30px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        &.active {
+          a {
+            font-weight: $intro-regular;
+            color: $black;
+          }
+        }
+
+        &:nth-child(2) {
+          display: block;
+        }
+
+        &+.breadcrumb-item {
+          position: relative;
+
+          &::before {
+            font-size: 0px;
+            content: url(../images/static-images/right-arrow-grey.svg);
+            padding-right: 10px;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+
+    .page-title,
+    .page-desc {
+      font-weight: $intro-regular;
+    }
+
+    .page-title {
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: $intro-book;
+      margin-bottom: 21px;
+      margin-top: 20px;
+      display: inline-flex;
+      align-items: center;
+
+      .icon {
+        width: 44px;
+        height: 44px;
+        margin-right: 16px;
+        object-fit: contain;
+      }
+    }
+
+    .page-desc {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 0px;
+      font-weight: $intro-book;
+    }
+
+    .right-panel {
+      .goback-icon {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        font-weight: $intro-regular;
+
+        &:after {
+          top: 3px;
+        }
+      }
+
+      .report-bar-item {
+        margin-bottom: 0px;
+        font-size: 14px;
+
+        &:not(:last-child) {
+          margin-bottom: 3px;
+        }
+
+        &:last-child {
+          margin-top: 16px;
+        }
+
+        .cibil-link-dark {
+          display: inline-grid;
+          grid-gap: 9px;
+          grid-template-columns: 18px 1fr;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &.article-page-header {
+      .page-header-section__wraper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-panel {
+          width: 85%;
+        }
+      }
+    }
+
+    &.twoColumn {
+      .page-header-section__wraper {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        grid-gap: 10px;
+        align-items: end;
+
+        .right-panel {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    border-bottom: none;
+
+    &__wraper {
+      padding-top: 20px;
+      padding-bottom: 30px;
+
+      .page-desc {
+        font-weight: $intro-book;
+      }
+
+      .page-title {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 30px;
+
+        .icon {
+          margin-right: 10px;
+          width: 36px;
+          height: 36px;
+        }
+      }
+
+      .right-panel {
+        background: $light;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 20px 20px 30px;
+        margin-top: 20px;
+
+        .goback-icon {
+          color: $primary-blue !important;
+          padding-left: 19px;
+
+          &:after {
+            width: 9px;
+            height: 14px;
+            top: 2px;
+            background-image: url(/cibil-dashboard/images/static-images/goback-icon-blue.svg);
+          }
+
+          &:before {
+            max-width: calc(100% - 19px);
+          }
+        }
+      }
+    }
+
+    &.article-page-header {
+      .page-header-section__wraper {
+        padding-bottom: 0px;
+      }
+    }
+  }
+
+  @include media-breakpoint-only(md) {
+    &.twoColumn {
+      .page-header-section__wraper {
+        padding-bottom: 0px;
+      }
+
+      .right-panel {
+        background-color: transparent;
+        padding-top: 10px;
+      }
+    }
+  }
+}

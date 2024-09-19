@@ -1,0 +1,509 @@
+.cibil-page-header-section {
+    padding-top: 30px;
+    background: linear-gradient(358deg, rgba(241, 246, 255, 0) -1.49%, #F2F6FF 30.01%, #DBE8FF 100%);
+    border-bottom: none;
+    padding-bottom: 80px;
+}
+
+.reward-point-section {
+    padding-bottom: 60px;
+
+    .reward-point-card {
+        border: 1px solid #DDDDDD;
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        margin-top: -45px;
+        z-index: 1;
+
+        .your-reward-points {
+            width: 98%;
+
+            h2 {
+                font-family: 'Intro';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.02em;
+                color: #2C2C2C;
+
+            }
+
+        }
+
+        .progress-bars {
+            h5 {
+                font-family: 'Intro';
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 32px;
+                padding-top: 10px;
+                letter-spacing: -0.01em;
+                color: #00A6CA;
+
+            }
+
+            .progress-track {
+                background: #DDDDDD;
+                border-radius: 11px;
+                height: 10px;
+                width: 100%;
+
+                .progress-fill {
+                    width: 50%;
+                    background: #00A6CA;
+                    border-radius: 11px;
+                    height: 10px;
+                }
+            }
+
+            a {
+                display: flex;
+                justify-content: flex-end;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 14px;
+                margin-top: 30px;
+                text-decoration-line: underline;
+                color: #2C2C2C;
+
+                img {
+                    width: 12px;
+                    height: 12px;
+                    margin-left: 10px;
+
+                }
+            }
+
+        }
+
+        .verticle-line {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+
+            @media(max-width:767px) {
+                display: none;
+            }
+        }
+    }
+
+    .points-used {
+        @media(max-width:767px) {
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: $black;
+
+            img {}
+        }
+
+        h3 {
+            font-size: 32px;
+            line-height: 44px;
+            letter-spacing: -0.01em;
+            color: #2C2C2C;
+            // padding-top: 9px;
+            font-weight: $intro-regular;
+
+            @media(max-width:991px) {
+                padding-top: 26px;
+            }
+
+            @media(max-width:767px) {
+                margin-bottom: 0px;
+                padding-top: 0px;
+
+            }
+        }
+
+        a {
+            display: flex;
+            justify-content: flex-end;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            margin-top: 40px;
+            text-decoration-line: underline;
+            color: $black;
+
+            img {
+                width: 12px;
+                height: 12px;
+                margin-left: 10px;
+
+            }
+        }
+    }
+
+    @media(max-width:425px) {
+        background: #F5F9FF;
+    }
+}
+
+.successfull-referal {
+    padding-bottom: 50px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: #00A6CA;
+        margin-bottom: 20px;
+    }
+
+    .custom-table {
+        border: 1px solid #dee2e6;
+        // margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+
+
+        .cibil-table {
+            margin-bottom: 0px;
+
+            .thead-heading {
+                border-top: none;
+
+                tr {
+                    // border: 1px solid red;
+                }
+
+                th {
+                    font-size: 14px;
+                    color: $black;
+                    padding: 19px 20px;
+                    border-bottom: none;
+                    border-top: none;
+                    border: none;
+
+                }
+            }
+
+            .table-body {
+                background: #F6F7FC;
+                color: #2C2C2C;
+
+                // padding: 20px;
+                tr {
+                    // border: 1px solid red;
+                }
+
+                th {
+                    padding: 14px 16px;
+                    // border: none;
+                }
+
+                td {
+                    // border: none;
+                    padding: 14px 20px;
+                }
+
+                .td-1 {
+                    width: 35%;
+                }
+
+                .td-2 {
+                    width: 25%;
+                }
+
+                .td-3 {
+                    width: 20%;
+                }
+
+                .td-4 {
+                    width: 20%;
+                }
+
+                .disable-text {
+                    color: #ACACAC;
+
+                }
+
+                .grey {
+                    color: #707070;
+                }
+
+                .red-text {
+                    color: #D74025;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    
+      
+        // .img-down{
+        //     -moz-transform:rotate(180deg);
+        //     -webkit-transform:rotate(180deg);
+        //     transform: rotate(180deg)!important;
+        //     background: red;
+        // }
+      
+     
+    
+   
+
+}
+.table-section{
+    @media(max-width:767px){
+        padding-top: 30px;
+    }
+    .table-wraper{
+        padding-bottom: 60px;
+        @media(max-width:767px){
+            padding-bottom: 30px;
+           
+        }
+        h1{
+            font-family: 'Intro';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #00A6CA;
+            margin-bottom: 20px;
+        }
+        .disabled-text{
+            color: #ACACAC;
+        }
+        .red-text{
+            color: #D74025;
+        }
+    }
+    .cibil-account-head {
+        background: white;
+        padding: 21px 10px 19px;
+        .head-col:not(:last-child) {
+            border-right: none;
+        }
+        .head-col:nth-child(1) {
+            max-width: 300px!important;
+        }
+        .head-col:nth-child(2) {
+            max-width: 270px!important;
+        }
+    }
+    
+        .cibil-card-header{
+            @media (min-width: 768px){
+            padding-left: 10px!important;
+            padding-right: 10px!important;
+        }
+       
+        }
+       
+        
+    
+    .cibil-card-header-link{
+        &::before{
+            display: none !important;
+        }
+        .head-col:nth-child(1) {
+            max-width: 300px!important;
+        }
+        .head-col:nth-child(2) {
+            max-width: 270px!important;
+        }
+        .head-col:not(:last-child) {
+            border-right:none!important;
+        }
+        .head-col:nth-child(4)::before {
+           display: none!important;
+        }
+                 
+                 
+        .text-rights{
+            @media (min-width: 768px){
+            text-align: right!important;
+            width: 25%;
+            }  
+        }                 
+        
+    }
+    .view-more-btn{
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #2c2c2c;
+        text-decoration-line: underline!important;
+        cursor: pointer;
+        @media(max-width:767px){
+            margin-top: 30px;
+        }
+        img{
+            margin-left: 8px;
+           
+        }
+        .image-rotate{
+          
+            -moz-transform:rotate(180deg);
+            -webkit-transform:rotate(180deg);
+            transform:rotate(180deg);
+        }
+    }
+   
+    .view-more-btn-md{
+        @media(max-width:767px){
+            display: none;
+        }
+    }
+    .view-more-btn-sm{
+        @media(min-width:768px){
+            display: none;
+        }
+    }
+    .card-show-hide-toggle{
+        display: none;
+    }
+    .card-show-hide-toggleone{
+        display: none;
+    }
+    .view-more-sm-toggleone{
+        display: none;
+    }
+    .cibil-wallet-table{
+        @media(max-width:767px){
+            display: none;
+        }
+      }
+      .cibil-table-sm-container{
+        padding: 10px;
+        @media(min-width:768px){
+            display: none;
+        }
+        @media(max-width:767px){
+            padding: 0px;
+        }
+        
+        .card{
+            padding: 10px;
+            margin-bottom: 10px;
+            .title-col{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+               
+                h4{
+                    font-family: 'Intro';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #2C2C2C;
+                    margin-bottom: 0px;
+                    width: 60%;  
+                    word-break: break-all;
+                    @media(max-width:450px){
+                        font-size: 13px;
+                    }
+                    @media(max-width:361px){
+                        font-size: 11px;
+                        line-height: 18px;
+                        }
+
+                }
+                h5{
+                    font-family: 'Intro';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.02em;
+                    color: #2C2C2C;
+                    margin-bottom: 0px;
+                    width: 40%;  
+                    word-break: break-all;
+                    text-align: right;
+                    @media(max-width:450px){
+                        font-size: 13px;
+                    }
+                    @media(max-width:361px){
+                        font-size: 11px;
+                        line-height: 18px;
+                        }
+                }
+            }
+            .disabled-text{
+                color: #707070!important;
+            }
+            .text-gray{
+                color:#ACACAC!important;
+            }
+           
+            p{
+              margin-top: 10px;
+              margin-bottom: 0px;
+              font-size: 14px; 
+              color: #2C2C2C;
+              @media(max-width:450px){
+                font-size: 13px;
+                }
+                @media(max-width:361px){
+                    font-size: 11px;
+                    line-height: 18px;
+                    margin-top: 6px;
+                    }
+              span{
+                margin-left: 10px;
+                display: inline-block;
+              } 
+            }
+            
+
+        }
+      }
+      .cibil-transaction-logs-table-sm-container{
+        .card{
+            border-bottom: 1px solid rgba(0,0,0,.125)!important;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            border-radius: 0px;
+            @media(max-width:767px){
+                padding: 0px;
+            }
+        }
+        p{
+            margin-top: 1px!important;
+            span{
+                margin-left: 0px!important;
+            }
+        }
+      }
+      .card-show-hide-sm-toggleone{
+        display: none;
+      }
+      .card-show-hide-sm-toggle{
+        display: none;
+      }
+      .text-red{
+        color: #D74025!important;
+        }
+}
+
+.cibil-page-width {
+    display: block;
+    // max-width: 1130px;
+    //   padding: 0 48px;
+    padding: 0 60px;
+    margin-right: auto;
+
+        @include media-breakpoint-down(lg) {
+            padding: 0 20px;
+            margin-left: auto;
+        }
+    
+}
